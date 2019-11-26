@@ -9,4 +9,6 @@ app.get('/', (req, res) => {
     res.json('Hello world');
 });
 const port = process.env.PORT || 8080;
-app.listen(port, () => { console.log('Server runngin'); });
+app.listen(port, () => { console.log(`Server runngin at port ${port}`); });
+
+console.log('server lounch!');
