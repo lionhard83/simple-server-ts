@@ -6,4 +6,5 @@ app.get('/', (req, res) => {
     res.json('Hello world');
 })
 
-app.listen(5000, () => {console.log('Server runngin')});
+const port = process.env.PORT || 5000;
+app.listen(port, () => {console.log('Server runngin')});
