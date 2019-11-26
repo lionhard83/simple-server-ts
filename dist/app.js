@@ -8,4 +8,5 @@ const app = express_1.default();
 app.get('/', (req, res) => {
     res.json('Hello world');
 });
-app.listen(5000, () => { console.log('Server runngin'); });
+const port = process.env.PORT || 8080;
+app.listen(port, () => { console.log('Server runngin'); });
